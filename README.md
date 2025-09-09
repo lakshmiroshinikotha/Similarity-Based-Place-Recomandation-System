@@ -1,4 +1,4 @@
-# 🏞️ Place Recommender System  
+# 🏞️ Similarity Based Tourism Recommender System  
 
 A **Streamlit web app** that recommends places similar to the one you search or select. It uses precomputed similarity scores to suggest the top 5 related places.  
 
