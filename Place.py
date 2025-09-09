@@ -34,23 +34,10 @@ selected_place = st.selectbox(
 )
 
 if st.button('Show Recommendation'):
-    recommended_movie_names= recommend(selected_place)
-    col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        st.text(recommended_movie_names[0])
-        
-    with col2:
-        st.text(recommended_movie_names[1])
-        
+    st.header("Top 5 Recommendations")
+    recommended_place_names= recommend(selected_place)
+    for place in recommended_place_names:
+        st.text(place)
 
-    with col3:
-        st.text(recommended_movie_names[2])
-       
-    with col4:
-        st.text(recommended_movie_names[3])
-        
-    with col5:
-        st.text(recommended_movie_names[4])
-       
 
 
