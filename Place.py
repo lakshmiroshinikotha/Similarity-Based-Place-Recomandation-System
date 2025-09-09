@@ -15,7 +15,7 @@ def recommend(movie):
     return recommended_movie_names
 
 
-st.header('Place Recommender System')
+st.header('Similarity Based Tourism Recommender')
 place = pickle.load(open('place_list.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 place_list = place['Name'].values
@@ -38,6 +38,7 @@ if st.button('Show Recommendation'):
     recommended_place_names= recommend(selected_place)
     for place in recommended_place_names:
         st.text(place)
+
 
 
 
